@@ -1,0 +1,25 @@
+﻿server:
+  port: 9527
+spring:
+  application:
+    name: zuul-gateway
+zuul:
+  routes:
+    sysmanage.serviceId: hrm-sysmanage 
+    sysmanage.path: /sysmanage/** 
+  ignored-services: "*" 
+  prefix: "/services" 
+  retryable: true 
+ribbon:
+  ConnectTimeout: 250 
+  ReadTimeout: 2000 
+  OkToRetryOnAllOperations: true 
+  MaxAutoRetriesNextServer: 2
+  MaxAutoRetries: 1 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMillisecond: 3000
