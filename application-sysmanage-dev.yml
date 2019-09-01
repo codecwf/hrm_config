@@ -1,25 +1,13 @@
 ﻿server:
-  port: 9527
+  port: 9001
 spring:
   application:
-    name: zuul-gateway
-zuul:
-  routes:
-    sysmanage.serviceId: hrm-sysmanage 
-    sysmanage.path: /sysmanage/** 
-  ignored-services: "*" 
-  prefix: "/services" 
-  retryable: true 
-ribbon:
-  ConnectTimeout: 250 
-  ReadTimeout: 2000 
-  OkToRetryOnAllOperations: true 
-  MaxAutoRetriesNextServer: 2
-  MaxAutoRetries: 1 
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMillisecond: 3000
+    name: hrm-sysmanage
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hrm_sysmanage
+    username: root
+    password: 123456
+mybatis-plus:
+  mapper-locations: classpath:com/cwf/hrm/mapper/*Mapper.xml
+  type-aliases-package: com.cwf.hrm.domain,com.cwf.hrm.query
