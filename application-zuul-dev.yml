@@ -10,7 +10,7 @@ zuul:
     course.serviceId: hrm-course 
     course.path: /course/** 
     fastdfs.serviceId: hrm-fastdfs 
-    fastdfs.path: /fastdfs/** 
+    fastdfs.path: /fastdfs/**  
   ignored-services: "*" 
   prefix: "/services" 
   retryable: true 
