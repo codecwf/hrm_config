@@ -5,7 +5,7 @@ spring:
     name: hrm-staticpage
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/hrm_course?useSSL=false
+    url: jdbc:mysql://localhost:3306/hrm_staticpage?useSSL=false
     username: root
     password: 123456
 mybatis-plus:
