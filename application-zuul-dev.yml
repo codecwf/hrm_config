@@ -12,7 +12,9 @@ zuul:
     fastdfs.serviceId: hrm-fastdfs 
     fastdfs.path: /common/** 
     es.serviceId: hrm-es 
-    es.path: /es/**     
+    es.path: /es/**  
+    staticpage.serviceId: hrm-staticpage 
+    staticpage.path: /staticpage/**     
   ignored-services: "*" 
   prefix: "/services" 
   retryable: true 

@@ -1,0 +1,13 @@
+﻿server:
+  port: 9006
+spring:
+  application:
+    name: hrm-staticpage
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hrm_course?useSSL=false
+    username: root
+    password: 123456
+mybatis-plus:
+  mapper-locations: classpath:com/cwf/hrm/mapper/*Mapper.xml
+  type-aliases-package: com.cwf.hrm.domain,com.cwf.hrm.query
