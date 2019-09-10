@@ -1,0 +1,5 @@
+﻿server:
+  port: 9006
+spring:
+  application:
+    name: hrm-rabbitmq
