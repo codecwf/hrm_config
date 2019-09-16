@@ -17,8 +17,8 @@ zuul:
     staticpage.path: /staticpage/**  
     rabbitmq.serviceId: hrm-rabbitmq
     rabbitmq.path: /rabbitmq/**  
-    uesr.serviceId: hrm-uesr
-    uesr.path: /uesr/**         
+    user.serviceId: hrm-user
+    user.path: /user/**         
   ignored-services: "*" 
   prefix: "/services" 
   retryable: true 
